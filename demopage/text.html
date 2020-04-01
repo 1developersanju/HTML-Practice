@@ -254,12 +254,25 @@ Profession: Physicist, Author
 <p><a href="https://www.youtube.com/channel/UCAxW0ZP3Gcfxe8ggCJLaHRQ">click here to visit my new channel</a></p>
 
 
-
-
-
-
+<p>Show a file-select field which allows a file to be chosen for upload in my tube:</p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  
+</form>
   </p>
 </form>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px bold";
+ctx.strokeText("Hello every 1",10,50);
+</script>
+
 
 
 
